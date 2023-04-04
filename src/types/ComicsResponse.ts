@@ -1,6 +1,6 @@
-import type {DataWrapper} from "./DataWrapper";
+import type { DataWrapper } from "./DataWrapper";
 
-export interface ComicsDataWrapper extends DataWrapper<Comic>{}
+export interface ComicsDataWrapper extends DataWrapper<Comic> {}
 
 export interface Comic {
   id?: number;
@@ -120,4 +120,3 @@ interface EventSummary {
   resourceURI?: string;
   name?: string;
 }
-

@@ -43,7 +43,7 @@ export default function DetailedCharacter() {
     getComics,
     getStories
   );
-  if (error)  navigate("/characters");
+  if (error) navigate("/characters");
   if (loading) return <Loader />;
   const [character, comics, stories] = data;
   if (character && comics && stories) {
@@ -60,13 +60,15 @@ export default function DetailedCharacter() {
         <div className="container">
           <div className="info-section">
             <h2 className="page-subtitle">Description</h2>
-            <p className="description">{character.description || "No description available"}</p>
+            <p className="description">
+              {character.description || "No description available"}
+            </p>
           </div>
           <div className="info-section">
             <h2 className="page-subtitle">Comics</h2>
             <div className="cards-container">
               {comics.map((comic) => (
-                <ComicCard 
+                <ComicCard
                   handleClick={() => navigate(`/comics/${comic.id}`)}
                   key={comic.id}
                   comic={comic}

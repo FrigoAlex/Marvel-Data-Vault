@@ -42,4 +42,3 @@ const FilterSelect = ({
 };
 
 export default FilterSelect;
-

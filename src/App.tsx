@@ -1,4 +1,3 @@
-
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
@@ -15,7 +14,7 @@ import DetailedComic from "./pages/Comics/id";
 import Home from "./pages/Home";
 import Stories from "./pages/Stories";
 import DetailedStory from "./pages/Stories/id";
-import {persistor,store} from "./redux/store/store";
+import { persistor, store } from "./redux/store/store";
 
 import "./utils/apiSocket";
 
@@ -26,13 +25,22 @@ const App = () => {
         <Router>
           <Navbar />
           <Routes>
-            <Route path={PageRoutes.HOME} element={<Home/>} />
+            <Route path={PageRoutes.HOME} element={<Home />} />
             <Route path={PageRoutes.CHARACTERS} element={<Characters />} />
-            <Route path={PageRoutes.CHARACTERS + "/:id"} element={<DetailedCharacter/>} />
-            <Route path={PageRoutes.COMICS} element={<Comics/>} />
-            <Route path={PageRoutes.COMICS + "/:id"} element={<DetailedComic/>} />
+            <Route
+              path={PageRoutes.CHARACTERS + "/:id"}
+              element={<DetailedCharacter />}
+            />
+            <Route path={PageRoutes.COMICS} element={<Comics />} />
+            <Route
+              path={PageRoutes.COMICS + "/:id"}
+              element={<DetailedComic />}
+            />
             <Route path={PageRoutes.STORIES} element={<Stories />} />
-            <Route path={PageRoutes.STORIES + "/:id"} element={<DetailedStory/>} />
+            <Route
+              path={PageRoutes.STORIES + "/:id"}
+              element={<DetailedStory />}
+            />
             <Route path={PageRoutes.BOOKMARKS} element={<Bookmarks />} />
           </Routes>
           <Footer />

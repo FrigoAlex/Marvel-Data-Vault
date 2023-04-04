@@ -8,11 +8,11 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 :root {
-    --title-font: "Roboto Condensed", sans-serif;
-    --primary-font: "Roboto", sans-serif;
-    --primary-color: #000;
-    --secondary-color: #EBEBEB;
-    --third-color: #BE0E14;
-    --fourth-color: #23252f;
-    --background-color: #DEE5E5;
+  --title-font: "Roboto Condensed", sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  --primary-color: #000;
+  --secondary-color: #ebebeb;
+  --third-color: #be0e14;
+  --fourth-color: #23252f;
+  --background-color: #dee5e5;
 }

@@ -23,14 +23,14 @@ export default function DetailedComic() {
     (state: { bookmark: Bookmark[] }) => state.bookmark
   );
   const { id } = useParams<{ id: string }>();
-  const getComic = async() => getItemById<Comic>(Sections.comics, Number(id));
-  const getCharacters = async() =>
+  const getComic = async () => getItemById<Comic>(Sections.comics, Number(id));
+  const getCharacters = async () =>
     getSectionsFilteredByItemId<Character>(
       Sections.comics,
       Number(id),
       Sections.characters
     );
-  const getStories = async() =>
+  const getStories = async () =>
     getSectionsFilteredByItemId<Story>(
       Sections.comics,
       Number(id),
@@ -42,7 +42,7 @@ export default function DetailedComic() {
     getCharacters,
     getStories
   );
- 
+
   if (error) navigate("/comics");
   if (loading) return <Loader />;
   const [comic, characters, stories] = data;
@@ -60,7 +60,9 @@ export default function DetailedComic() {
         <div className="container">
           <div className="info-section">
             <h2 className="page-subtitle">Description</h2>
-            <p className="description">{comic.description || "No description available"}</p>
+            <p className="description">
+              {comic.description || "No description available"}
+            </p>
           </div>
           <div className="info-section">
             <h2 className="page-subtitle">Characters</h2>
@@ -98,5 +100,3 @@ export default function DetailedComic() {
   }
   return <p>Not found</p>;
 }
-
-

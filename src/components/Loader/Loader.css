@@ -1,9 +1,9 @@
 .loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 73vh;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+  width: 100%;
 }
 .lds-ring {
   display: inline-block;
