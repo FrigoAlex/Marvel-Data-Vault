@@ -83,7 +83,6 @@
 }
 .web-header .navbar .logo-container .logo {
   height: 90%;
-  margin-left: 30px;
 }
 .web-header .navbar a {
   color: #ffffff;
@@ -92,14 +91,13 @@
 }
 .web-header .navbar .links {
   position: absolute;
-  cursor: pointer;
   top: -700px;
   left: -2000px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .web-header .navbar .links .invisible {
   display: none;
@@ -110,7 +108,7 @@
   transition: 0.8s;
 }
 .web-header .navbar .links .link:hover {
-  filter: drop-shadow(0 0 0.3rem #fff);
+  font-size: 2rem;
 }
 @media (min-width: 768px) {
   .web-header .navbar .links {
