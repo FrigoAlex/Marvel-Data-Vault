@@ -58,7 +58,10 @@
           "caseInsensitive": true
         },
         "newlines-between": "always"
+        
       }
-    ]
+    ],
+    
+    "@typescript-eslint/no-empty-interface": "off"
   }
 }
