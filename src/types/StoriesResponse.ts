@@ -8,7 +8,7 @@ export interface Story {
   description?: string;
   resourceURI?: string;
   type?: string;
-  modified?: Date;
+  modified?: string;
   thumbnail?: Image;
   comics?: ComicList;
   series?: SeriesList;

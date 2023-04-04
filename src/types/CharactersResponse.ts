@@ -6,7 +6,7 @@ export interface Character {
   id?: number;
   name?: string;
   description?: string;
-  modified?: Date;
+  modified?: string;
   resourceURI?: string;
   urls?: Url[];
   thumbnail?: Image;
